@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/wizard_bkgd_one"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".UI.Verification_page">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_purple"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:text="USER"
+        android:textColor="@color/white"
+        android:textSize="35dp">
+
+
+        <TextView
+            android:id="@+id/welcome_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_purple"
+            android:gravity="center_vertical"
+            android:text="Welcome,"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:id="@+id/site_engineer"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/welcome_banner"
+            android:background="@drawable/input_purple"
+            android:gravity="center_vertical"
+            android:text="user"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/vectis_main_logo" />
+
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="30dp"
+        android:rowCount="3">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle"
+                android:drawableStart="@drawable/ic_baseline_check_24"
+                android:drawableLeft="@drawable/ic_baseline_check_24"
+                android:gravity="center"
+                android:paddingStart="7dp"
+                android:paddingLeft="7dp" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_skyblue"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="2"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_skyblue"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="3"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </GridLayout>
+
+
+    <TextView
+        android:id="@+id/intro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:text="Verify Device"
+        android:textColor="@color/deep_blue"
+        android:textSize="35dp" />
+
+
+    <TextView
+        android:id="@+id/intro3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro1"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="25dp"
+        android:text="A one time verification code has been sent to. Kindly uses it to complete this installation process"
+        android:textColor="@color/deep_blue"
+        android:textSize="18dp" />
+
+
+    <GridLayout
+        android:id="@+id/last_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro3"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+
+        <EditText
+            android:id="@+id/enter_device_serial"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:inputType="number"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_gray_fill"
+            android:gravity="center_horizontal"
+            android:hint="Enter One Time Verification Code"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+
+    </GridLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verify"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/last_grid"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_back_color"
+        android:text="VERIFY SETUP"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

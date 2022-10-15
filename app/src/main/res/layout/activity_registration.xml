@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/wizard_bkgd_one"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".UI.Registration">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/input_purple"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:paddingLeft="30dp"
+                android:text="USER"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+
+
+            <GridLayout
+                android:id="@+id/grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:rowCount="3">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle"
+                        android:drawableStart="@drawable/ic_baseline_check_24"
+                        android:drawableLeft="@drawable/ic_baseline_check_24"
+                        android:gravity="center"
+                        android:paddingStart="7dp"
+                        android:paddingLeft="7dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_skyblue"
+                        android:gravity="center_vertical"
+                        android:paddingStart="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="2"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_skyblue"
+                        android:gravity="center_vertical"
+                        android:paddingStart="15dp"
+                        android:paddingLeft="15dp"
+                        android:text="2"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+            </GridLayout>
+
+
+            <TextView
+                android:id="@+id/intro1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grid"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="15dp"
+                android:text="Register Device"
+                android:textColor="@color/deep_blue"
+                android:textSize="35dp" />
+
+
+            <TextView
+                android:id="@+id/intro3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intro1"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="15dp"
+                android:text="Select Service category for new merchant"
+                android:textColor="@color/deep_blue"
+                android:textSize="18dp" />
+
+
+            <GridLayout
+                android:id="@+id/mid_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intro3"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:rowCount="6">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/parking"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:background="@color/purple_700"
+                    android:text="Parking"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/toll"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/input_purple_border"
+                    android:text="Toll"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/vehicle_raw"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/input_purple_border"
+                    android:text="Vehicle Reward"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/vehicle_pass"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/input_purple_border"
+                    android:text="Vectis Pass"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bus"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/input_purple_border"
+                    android:text="Bus"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/train"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/input_purple_border"
+                    android:text="Train"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/last_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mid_grid"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="50dp"
+                android:columnCount="2"
+                android:rowCount="2">
+
+
+                <EditText
+                    android:id="@+id/enter_device_serial"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="50dp"
+                    android:inputType="number"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/input_gray_fill"
+                    android:gravity="center_horizontal"
+                    android:hint="Enter Device Serial number"
+                    android:padding="10dp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/merchant_id"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/input_gray_fill"
+                    android:gravity="center_horizontal"
+                    android:hint="Merchant ID"
+                    android:padding="10dp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/terminal_name"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/input_gray_fill"
+                    android:gravity="center_horizontal"
+                    android:hint="Terminal Name"
+                    android:padding="10dp"
+                    android:textAlignment="center" />
+
+
+                <EditText
+                    android:id="@+id/terminal_location"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/input_gray_fill"
+                    android:gravity="center_horizontal"
+                    android:hint="Terminal Location"
+                    android:padding="10dp"
+                    android:textAlignment="center" />
+
+            </GridLayout>
+
+
+
+
+            <Spinner
+                android:layout_below="@id/last_grid"
+                android:id="@+id/spinner"
+                android:layout_width="200dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Process"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/spinner"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_back_color"
+                android:text="Process"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/Process" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0sp"
+    tools:context=".UI.MainActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/vectis_main_logo" />
+
+
+    <ImageView
+        android:id="@+id/picturedisplay"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:layout_height="200dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clock"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/logo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/purple_700"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/time_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plan_based"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clock"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_purple_radius"
+        android:drawableStart="@drawable/ic_baseline_camera_alt_24"
+        android:paddingStart="35dp"
+        android:visibility="invisible" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="320dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="15dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:rowCount="2">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/input_purple_radius"
+                android:drawableStart="@drawable/ic_baseline_qr_code_24"
+                android:drawableLeft="@drawable/ic_baseline_qr_code_24"
+                android:padding="25dp"
+                android:text="  SCAN WITH MOBILE APP"
+                android:textColor="@color/white" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/input_purple_radius"
+                android:drawableStart="@drawable/ic_baseline_nfc_24"
+                android:drawableLeft="@drawable/ic_baseline_nfc_24"
+                android:padding="25dp"
+                android:text="  SCAN WITH VECTIS CARD"
+                android:textColor="@color/white" />
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

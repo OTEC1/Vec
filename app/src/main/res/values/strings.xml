@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Vectis Orbit</string>
+    <string name="ON_AUTHENTICATED">ON_AUTHENTICATED</string>
+    <string name="ON_CRED">ON_CRED</string>
+    <string name="splash_intro">This setup process requires an authorized engineer to carry out client subscription installation on approved Vectis Smart Terminal (VST) devices at designated client locations.</string>
+    <string name="vectis_setup">Vectis Setup Installation</string>
+    <string name="DEVICE_TYPE">DEVICE_TYPE</string>
+    <string name="ENGINEER_ID">ENGINEER_ID</string>
+    <string name="FULL_NAME">FULL_NAME</string>
+    <string name="EMAIL">EMAIL</string>
+    <string name="SETUP_CODE">SETUP_CODE</string>
+    <string name="SERVICE_TYPE">SERVICE_TYPE</string>
+    <string name="VECTIS_PASS_PACKAGE">VECTIS_PASS_PACKAGE</string>
+    <string name="SERIAL_NUMBER">SERIAL_NUMBER</string>
+    <string name="PROVIDER_ID">PROVIDER_ID</string>
+    <string name="TERMINAL_NAME">TERMINAL_NAME</string>
+    <string name="TERMINAL_LOCATION">TERMINAL_LOCATION</string>
+    <string name="RESTART_BUTTON">RESTART_BUTTON</string>
+    <string name="WORKSTATION_ID">WORKSTATION_ID</string>
+    <string name="MERCHANT">MERCHANT</string>
+    <string name="SECRET">SECRET</string>
+    <string name="DEVICE_TYPE_CHOOSE">VECTIS_PASS</string>
+    <string name="SERVICE_TYPE_CHOOSE">Premium</string>
+</resources>
